@@ -1,0 +1,213 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form-container.active{
+    scale:1;
+    opacity:1;
+    display: flex;
+}
+html,body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(46, 104, 128);
+}
+.wrapper h1{
+    color: rgb(18, 18, 19);
+    padding-top: 35px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    display:flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px; 
+}
+.tab{
+    font-size:20px;
+    padding: 0.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1.70px;
+}
+.tab.currentTab{
+    background-color:rgba(237, 239, 241, 0.651);
+    border-radius: 4px;
+}
+.weather-container{
+    margin-block: 3rem;
+}
+.grantLocation button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: medium;
+    text-transform: uppercase;
+    background-color: rgba(237, 239, 241, 0.651);
+    width: 200px;
+    margin: auto;
+    font-weight: 500;
+    letter-spacing: 1.70px;
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grantLocation{
+    display: none;
+}
+.grantLocation.active{
+    display: flex;
+    flex-direction: column;
+}
+.grantLocation img{
+    margin-bottom: 2rem;
+    margin: auto;
+    border-radius: 100px;
+}
+.grantLocation p:first-of-type{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+.grantLocation p:last-of-type{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+
+}
+.loadingContainer{
+    display: none;
+}
+.loadingContainer.active{
+    display: flex;
+    flex-direction: column;
+}
+.loadingContainer p{
+    text-transform: uppercase;
+}
+.loadingContainer img{
+    margin: auto;
+}
+.userContainer{
+    display: none;
+}
+.userContainer.active{
+    display: flex;
+    flex-direction: column;
+}
+.name p{
+    font-size: 1.4rem;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.name img{
+    width: 40px;
+    height: 40px;
+    object-fit:contain;
+}
+.weatherIcon{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin: auto;
+}
+.weatherInfo{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+}
+.temp{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.card-container{
+    width: 80;
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.parameter{
+    width: 15%;
+    max-width: 180px;
+    background-color:  rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px 0; */
+}
+.parameter img{
+    width: 50px;
+    height: 50px;
+}
+.parameter p:first-of-type{
+    font-size: 1.1rem;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.parameter p:last-of-type{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.searchLocation{
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+.searchLocation.active{
+    display: flex;
+}
+.searchLocation input{
+    all: unset;
+    width: 450px;
+    background-color: rgb(209, 215, 219);
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.searchLocation::placeholder{
+    color: rgb(90, 81, 81);
+}
+
+.searchLocation button{
+    padding:unset;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90%;
+    margin-bottom:1px;
+    background-color: rgb(162, 175, 164);
+}

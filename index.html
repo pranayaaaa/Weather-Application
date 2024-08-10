@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>Weather Forecasting</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Location</p>
+            <p class="tab" data-searchWeather>Search Location</p>
+        </div>
+
+        <div class="weather-container">
+
+            <!-- location access -->
+
+            <div class=" subContainer grantLocation">
+                <img src="./Images/locationn.png" alt="" height="80" width="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Location Access is Required to get Weather Information</p>
+                <button class="btn">Grant Access</button>
+            </div>
+
+            <!-- search location form -->
+
+            <form class="searchLocation" data-searchForm>
+                <input placeholder="Search any City" data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./Images/searchh.png" alt="" height="50" width="50" loading="lazy">
+                </button>
+            </form>
+
+            <!-- loading screen -->
+
+            <div class="loadingContainer">
+                <img src="./Images/Loading-.gif" alt="" width="200" height="200">
+                <p>loading</p>
+            </div>
+
+            <!-- show weather info -->
+
+            <div class="userContainer">
+                <div class="name">
+                    <p class="city"></p>
+                    <img src="" alt="" class="flag">
+                </div>
+
+                <p class="weatherInfo"></p>
+                <img src="" class="weatherIcon" alt="">
+                <p class="temp"></p>
+
+                <!-- 3cards with 2 rows -->
+
+                <div class="card-container">
+
+                    <div class="parameter">
+                        <img src="./Images/wind.png" alt="">
+                        <p>Windspeed</p>
+                        <p class="windSpeed"></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="./Images/humidity.png" alt="">
+                        <p>Humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="./Images/cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p class="clouds"></p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="parameter">
+                        <img src="./Images/rain.png" alt="">
+                        <p>Rain</p>
+                        <p class="rain"></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="./Images/sun.png" alt="">
+                        <p>Sunrise</p>
+                        <p class="sunrise"></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="./Images/pressure.png" alt="">
+                        <p>Pressure</p>
+                        <p class="pressure"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
