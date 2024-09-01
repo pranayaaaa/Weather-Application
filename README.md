@@ -9,9 +9,9 @@ The Weather Application is a web-based app that provides real-time weather infor
 3. 📍 Geolocation Support: Automatically fetches weather data based on the user's current location.
 
 # Technologies Used
-Frontend: HTML, CSS, JavaScript
-API: OpenWeatherMap API (or any other weather API you're using)
-Deployment: Netlify, Vercel, GitHub Pages, or any other hosting platform
+1. Frontend: HTML, CSS, JavaScript
+2. API: OpenWeatherMap API (or any other weather API you're using)
+3. Deployment: Netlify, Vercel, GitHub Pages, or any other hosting platform
 
 # Live Demo
 https://weather-newss.netlify.app/
