@@ -4,9 +4,9 @@
 The Weather Application is a web-based app that provides real-time weather information for cities. Built with modern web technologies, it fetches weather data from a third-party API and presents it in a user-friendly interface.
 
 # Features
-🌤 Current Weather Information: Get real-time weather details like temperature, humidity, wind speed, and more.
-🏙 Search by City: Search for weather information by entering the name of a city.
-📍 Geolocation Support: Automatically fetches weather data based on the user's current location.
+1. 🌤 Current Weather Information: Get real-time weather details like temperature, humidity, wind speed, and more.
+2. 🏙 Search by City: Search for weather information by entering the name of a city.
+3. 📍 Geolocation Support: Automatically fetches weather data based on the user's current location.
 
 # Technologies Used
 Frontend: HTML, CSS, JavaScript
